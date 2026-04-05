@@ -1,0 +1,59 @@
+﻿@model QLCoffee.Models.NHACUNGCAP
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>XÓA NHÀ CUNG CẤP</h2>
+
+<h3>Bạn có chắc chắn muốn xóa nhà cung cấp này không?</h3>
+
+<div id="delete-message"></div>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Mã nhà cung cấp:</dt>
+        <dd>@Html.DisplayFor(model => model.MaNCC)</dd>
+
+        <dt>Tên nhà cung cấp:</dt>
+        <dd>@Html.DisplayFor(model => model.TenNCC)</dd>
+
+        <dt>Địa chỉ:</dt>
+        <dd>@Html.DisplayFor(model => model.DiaChi)</dd>
+
+        <dt>Số điện thoại:</dt>
+        <dd>@Html.DisplayFor(model => model.SoDT)</dd>
+    </dl>
+
+    <button id="btnDelete" class="btn btn-danger">Xóa</button>
+    @Html.ActionLink("Quay về danh sách", "Index", null, new { @class = "btn btn-primary" })
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#btnDelete").click(function () {
+            if (!confirm("Bạn có chắc muốn xóa nhà cung cấp này?")) return;
+
+            $.ajax({
+                url: '@Url.Action("DeleteConfirmed", "NhaCungCap", new { area = "Admin" })',
+                type: 'POST',
+                data: {
+                    id: '@(Model != null ? Model.MaNCC : "")',
+                    __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                },
+                success: function (response) {
+                    if (response.success) {
+                        $("#delete-message").html('<div class="alert alert-success">' + response.message + '</div>');
+                    } else {
+                        $("#delete-message").html('<div class="alert alert-danger">' + response.message + '</div>');
+                    }
+                },
+                error: function () {
+                    $("#delete-message").html('<div class="alert alert-danger">Lỗi trong quá trình xử lý.</div>');
+                }
+            });
+        });
+    });
+</script>

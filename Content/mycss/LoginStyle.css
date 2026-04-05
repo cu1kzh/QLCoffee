@@ -1,0 +1,39 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*#div-top {
+            width: 100%;
+            height: 100px;
+            background-color: #1B4332;
+        }*/
+#div-top-1 {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(51, 51, 51)
+}
+
+#div-footer {
+    display: flex;
+    justify-content: space-around; /* Căn đều các khối theo chiều ngang */
+    align-items: flex-start; /* Căn đỉnh các khối theo chiều dọc */
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap; /* Đảm bảo bố cục không bị tràn */
+}
+
+.fm-gt-footer img {
+    margin-top: 20px; /* Thêm khoảng cách giữa các nội dung và logo */
+    max-width: 100%; /* Giữ tỷ lệ ảnh */
+    height: auto;
+}
+
+.fm-gt-footer {
+    padding: 10px;
+}

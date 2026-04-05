@@ -1,0 +1,76 @@
+﻿@*@model QLCoffee.Models.ViewModel.ProductVM
+
+@{
+    ViewBag.Title = "DetailProduct";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+}
+<style>
+    .probox {
+        position: sticky;
+        top:10px;
+        max-width:400px;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid white;
+        border-radius: 8px;
+        background: white;
+    }
+
+    img {
+        max-width: 390px;
+        padding: 10px;
+        align-items: center;
+        border: 1px solid grey;
+        border-radius: 8px;
+        background: white;
+    }
+    .proInfo {
+        position: sticky;
+        top: 10px;
+        max-width: 500px;
+        padding: 10px 30px;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 8px;
+        background: white;
+        gap:10px;
+        display:flex;
+        
+    }
+</style>
+
+
+
+<div class="container">
+    <div class="col-lg-4 probox">
+        <div class="row">
+            <img src="@Url.Content(Model.Img1)" />
+        </div>
+        <div class="row">
+            @Html.DisplayFor(model => model.TenSP)
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="row proInfo">
+            <h2 class="proName">@Html.DisplayNameFor(model => model.TenSP)</h2>
+            <p>
+                <span>Đã bán &nbsp;(@Html.DisplayFor(model => model.SoLuongDaBan))&nbsp;|&nbsp;</span>
+            </p>
+            <h4>Màu</h4>
+            <p>@Html.DisplayFor(model => model.TenMau)</p>
+        </div>
+        <div class="row relatedInfo">
+            <h3>Sản phẩm tương tự</h3>
+            @Html.Partial("ProductByCategory", Model.RelatedProduct)
+        </div>
+        <div class="row relatedInfo">
+            <h2>Thông tin nhà bán</h2>
+            <h3>@Html.DisplayFor(model => model.TenNCC)</h3>
+            <p>@Html.DisplayFor(model => model.DiaChi)</p>
+        </div>
+    </div>
+    <div class="col-lg-3">
+
+    </div>
+      
+</div>*@

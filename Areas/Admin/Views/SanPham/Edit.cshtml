@@ -1,0 +1,100 @@
+﻿@model QLCoffee.Models.SANPHAM
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    bool isDisabled = ViewBag.IsEdit != null && (bool)ViewBag.IsEdit;
+}
+
+<h2>Chỉnh sửa thông tin sản phẩm</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.MaSP)
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label>Tên sản phẩm</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.TenSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.TenSP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Giá sản phẩm:</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.GiaSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.GiaSP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Số lượng sản phẩm:</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.SoLuongSP, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoLuongSP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Số lượng bán ra:</label>
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.SoLuongDaBan, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.SoLuongDaBan, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Ngày sản xuất:</label>
+            <div class="col-md-10">
+                <input name="NgaySX" class="form-control" value="@string.Format("0:yyyy-MM-dd",DateTime.Now)" type="date" />
+                @Html.ValidationMessageFor(model => model.NgaySX, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Mã sản phẩm chính:</label>
+            <div class="col-md-10">
+                @Html.DropDownList("IDPro", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.IDPro, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Màu </label>
+            <div class="col-md-10">
+                @Html.DropDownList("MaMau", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaMau, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Dung lượng</label>
+            <div class="col-md-10">
+                @Html.DropDownList("MaDungLuong", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaDungLuong, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group" style="margin-top:15px">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-outline-primary" />|
+                @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-dark" })
+            </div>
+        </div>
+    </div>
+</div>
+}
+

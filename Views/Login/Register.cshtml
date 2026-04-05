@@ -1,0 +1,140 @@
+﻿@model QLCoffee.Models.TAIKHOAN
+
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LayoutDangKy.cshtml";
+}
+
+<style>
+    .login-container {
+        background-color: white;
+        padding: 40px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 400px;
+        text-align: center;
+    }
+
+        .login-container input[type="submit"] {
+            background-color: #1877f2;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #165cbd;
+        }   
+    .error-message {
+        color: red;
+        font-size: 10px;
+        margin-bottom: 1px;
+        text-align: left;
+       
+    }
+</style>
+
+@using (Html.BeginForm("AuthenRegister", "Login", FormMethod.Post))
+{
+    <div class="login-container">
+        <h2>Đăng ký</h2>
+        <form action="/AuthenRegister" method="post">
+            <input type="text" name="TenDN" placeholder="Tên đăng nhập...">
+            <div class="error-message">@Html.ValidationMessageFor(m => m.TenDN)</div>
+
+            <input type="text" name="Email" placeholder="Email...">
+            <div class="error-message">@Html.ValidationMessageFor(m => m.Email)</div>
+
+            <input type="password" name="MatKhau" placeholder="Nhập mật khẩu...">
+            <div class="error-message">@Html.ValidationMessageFor(m => m.MatKhau)</div>
+
+            <input type="submit" value="Đăng ký" class="btn-submit" />
+            <a href="/Login/Login">Đăng nhập ngay</a>
+        </form>
+    </div>
+}
+
+
+
+            @*<table class="form-table">
+                        <tr>
+                            <th>Enter Username</th>
+                            <td>
+                                @Html.TextBoxFor(m => m.TenDN, new { @class = "input-text" })
+                                <em style="color:red">@Html.ValidationMessageFor(m => m.TenDN)
+                                </em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Enter Password</th>
+                            <td>
+                                @Html.PasswordFor(m => m.MatKhau, new { @class = "input-text" })
+                                <em style="color:red">@Html.ValidationMessageFor(m => m.MatKhau)</em>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td colspan="2" style="text-align: center;">
+                                <input type="submit" value="Register" class="btn-submit" />
+                            </td>
+                        </tr>
+                        <a href="/Login/Login">Đăng nhập ngay</a>
+                    </table>
+                }
+
+                <style>
+                    .form-table {
+                        width: 100%;
+                        max-width: 500px;
+                        margin: 0 auto;
+                        border-collapse: collapse;
+                    }
+
+                        .form-table th, .form-table td {
+                            padding: 10px;
+                            text-align: left;
+                            border-bottom: 1px solid #ddd;
+                        }
+
+                    .input-text {
+                        width: 100%;
+                        padding: 8px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                    }
+
+                    .btn-submit {
+                        padding: 10px 20px;
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    }
+
+                        .btn-submit:hover {
+                            background-color: #45a049;
+                        }
+                </style>*@

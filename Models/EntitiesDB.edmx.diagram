@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fe0630c48d1644f9b8d7cb4234de6617" Name="Diagram1" ZoomLevel="62">
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.CHITIET_HOADON" Width="1.5" PointX="10.5" PointY="3.5" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.DANHGIA" Width="1.5" PointX="6" PointY="8.25" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.DUNGLUONG" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.HOADON" Width="1.5" PointX="8.25" PointY="12.125" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.KHACHHANG" Width="1.5" PointX="3.75" PointY="13.125" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.KHO" Width="1.5" PointX="7.5" PointY="3.5" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.KHUYENMAI" Width="1.5" PointX="8.25" PointY="17.625" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.LOAISANPHAM" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.MAU" Width="1.5" PointX="3" PointY="7.125" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.NHACUNGCAP" Width="1.5" PointX="5.25" PointY="18.75" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.NHANVIEN" Width="1.5" PointX="3.75" PointY="9.75" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.PRODUCT" Width="1.5" PointX="3" PointY="3.375" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.SANPHAM" Width="1.5" PointX="5.25" PointY="2.875" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.SHIPPER" Width="1.5" PointX="6" PointY="16.25" />
+        <EntityTypeShape EntityType="QuanLyQuanCoffeeModel.TAIKHOAN" Width="1.5" PointX="6" PointY="11.25" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_HOADON_CHITIETHOADON" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_KHUYENMAI_CHITIETHOADON" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_SANPHAM_CHITIETHOADON" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_KHACHHANG_DANHGIA" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_DUNGLUONG_SANPHAM" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_SHIPPER_HOADON" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_TAIKHOAN_HOADON" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_KHACHHANG_TAIKHOAN" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_NHACUNGCAP_KHO" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_SANPHAM_KHO" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_LOAISANPHAM_PRODUCT" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_MAMAU_SANPHAM" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_NHANVIEN_TAIKHOAN" />
+        <AssociationConnector Association="QuanLyQuanCoffeeModel.FK_PRODUCT_SANPHAM" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

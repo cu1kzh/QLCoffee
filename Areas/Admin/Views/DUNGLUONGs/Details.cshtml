@@ -1,0 +1,27 @@
+﻿@model QLCoffee.Models.DUNGLUONG
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DUNGLUONG</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KichThuocDL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KichThuocDL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaDungLuong }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

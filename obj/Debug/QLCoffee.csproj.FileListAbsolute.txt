@@ -1,0 +1,247 @@
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\QLCoffee.dll.config
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\QLCoffee.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\QLCoffee.pdb
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\csc.exe
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\csc.exe.config
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\csc.rsp
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\csi.exe
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\csi.exe.config
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\csi.rsp
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\System.Buffers.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\System.Memory.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\vbc.exe
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\vbc.exe.config
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\vbc.rsp
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\VBCSCompiler.exe
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\Antlr3.Runtime.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\EntityFramework.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\EntityFramework.SqlServer.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\Newtonsoft.Json.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\PagedList.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\PagedList.Mvc.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Buffers.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Memory.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Numerics.Vectors.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Text.Encodings.Web.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.Helpers.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.Mvc.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.Optimization.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.Razor.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.WebPages.Deployment.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.WebPages.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.WebPages.Razor.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\WebGrease.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\X.PagedList.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\X.PagedList.Mvc.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\X.PagedList.Web.Common.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\EntityFramework.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\EntityFramework.SqlServer.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\PagedList.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\PagedList.Mvc.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Buffers.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Memory.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Numerics.Vectors.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Text.Encodings.Web.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.Helpers.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.Mvc.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.Razor.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.WebPages.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.WebPages.Deployment.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.WebPages.Razor.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\System.Web.Optimization.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\Newtonsoft.Json.xml
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\bin\Antlr3.Runtime.pdb
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.AssemblyReference.cache
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.CoreCompileInputs.cache
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.Up2Date
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\obj\Debug\QLCoffee.dll
+C:\Users\hieun\OneDrive\Tài liệu\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\obj\Debug\QLCoffee.pdb
+D:\Tài liệu đại học năm 4\Mẫu thiết kế cho pm\SellPhone_Project-HoaGiai (2)\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\obj\Debug\QLCoffee.dll
+D:\Tài liệu đại học năm 4\Mẫu thiết kế cho pm\SellPhone_Project-HoaGiai (2)\SellPhone_Project-HoaGiai\SellPhone_Project-HoaGiai\QLCoffee\QLCoffee\obj\Debug\QLCoffee.pdb
+D:\DemoPattern\QLCoffee\QLCoffee\bin\QLCoffee.dll.config
+D:\DemoPattern\QLCoffee\QLCoffee\bin\QLCoffee.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\QLCoffee.pdb
+D:\DemoPattern\QLCoffee\QLCoffee\bin\Antlr3.Runtime.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\EntityFramework.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\EntityFramework.SqlServer.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\Microsoft.Web.Infrastructure.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\Newtonsoft.Json.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\PagedList.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\PagedList.Mvc.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Buffers.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Memory.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Numerics.Vectors.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Text.Encodings.Web.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Helpers.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Mvc.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Optimization.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Razor.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.Deployment.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.Razor.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\WebGrease.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\X.PagedList.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\X.PagedList.Mvc.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\X.PagedList.Web.Common.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\EntityFramework.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\EntityFramework.SqlServer.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\PagedList.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\PagedList.Mvc.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Buffers.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Memory.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Numerics.Vectors.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Text.Encodings.Web.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Helpers.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Mvc.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Razor.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.Deployment.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.Razor.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Optimization.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\Newtonsoft.Json.xml
+D:\DemoPattern\QLCoffee\QLCoffee\bin\Antlr3.Runtime.pdb
+D:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.AssemblyReference.cache
+D:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.CoreCompileInputs.cache
+D:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.Up2Date
+D:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.dll
+D:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.pdb
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csc.exe
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csc.exe.config
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csc.rsp
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csi.exe
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csi.exe.config
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csi.rsp
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Managed.Core.targets
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Buffers.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Collections.Immutable.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Memory.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Numerics.Vectors.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Reflection.Metadata.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\vbc.exe
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\vbc.exe.config
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\vbc.rsp
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\VBCSCompiler.exe
+D:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\VBCSCompiler.exe.config
+C:\DemoPattern\QLCoffee\QLCoffee\bin\QLCoffee.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\QLCoffee.pdb
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csc.exe
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csc.exe.config
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csc.rsp
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csi.exe
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csi.exe.config
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\csi.rsp
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.Managed.Core.targets
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Buffers.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Collections.Immutable.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Memory.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Numerics.Vectors.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Reflection.Metadata.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\vbc.exe
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\vbc.exe.config
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\vbc.rsp
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\VBCSCompiler.exe
+C:\DemoPattern\QLCoffee\QLCoffee\bin\roslyn\VBCSCompiler.exe.config
+C:\DemoPattern\QLCoffee\QLCoffee\bin\Antlr3.Runtime.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\EntityFramework.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\EntityFramework.SqlServer.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\Microsoft.Web.Infrastructure.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\Newtonsoft.Json.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\PagedList.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\PagedList.Mvc.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Buffers.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Memory.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Numerics.Vectors.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Text.Encodings.Web.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Helpers.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Mvc.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Optimization.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Razor.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.Deployment.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.Razor.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\WebGrease.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\X.PagedList.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\X.PagedList.Mvc.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\X.PagedList.Web.Common.dll
+C:\DemoPattern\QLCoffee\QLCoffee\bin\EntityFramework.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\EntityFramework.SqlServer.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\PagedList.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\PagedList.Mvc.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Buffers.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Memory.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Numerics.Vectors.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Text.Encodings.Web.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Helpers.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Mvc.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Razor.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.Deployment.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.WebPages.Razor.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\System.Web.Optimization.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\Newtonsoft.Json.xml
+C:\DemoPattern\QLCoffee\QLCoffee\bin\Antlr3.Runtime.pdb
+C:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.AssemblyReference.cache
+C:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.CoreCompileInputs.cache
+C:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.csproj.Up2Date
+C:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.dll
+C:\DemoPattern\QLCoffee\QLCoffee\obj\Debug\QLCoffee.pdb
