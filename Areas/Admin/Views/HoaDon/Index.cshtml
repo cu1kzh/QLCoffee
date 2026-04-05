@@ -1,0 +1,87 @@
+﻿@model IEnumerable<QLCoffee.Models.HOADON>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>QUẢN LÝ HÓA ĐƠN</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Mã hóa đơn
+        </th>
+        <th>
+            Địa Chỉ
+        </th>
+        <th>
+            Tổng giá trị hóa đơn
+        </th>
+        <th>
+            Trạng thái
+        </th>
+        <th>
+            Thao Tác
+        </th>
+        <th>
+            Ngày đặt
+        </th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaHD)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GhiChu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TongGiaTriHD)
+            <td>
+                <select class="status-dropdown" data-id="@item.MaHD">
+                    <option value="Chuẩn bị hàng" @(item.TrangThaiDH == "Đang giao" ? "selected" : "")>Chuẩn bị hàng</option>
+                    <option value="Đang giao" @(item.TrangThaiDH == "Đang giao" ? "selected" : "")>Đang giao</option>
+                    <option value="Đã giao" @(item.TrangThaiDH == "Đã giao" ? "selected" : "")>Đã giao</option>
+                    <option value="Hủy đơn" @(item.TrangThaiDH == "Hủy đơn" ? "selected" : "")>Hủy đơn</option>
+                </select>
+            </td>          
+            <td>
+                @string.Format("{0:dd/MM/yyyy}", item.NgayTD)
+            </td>
+            <td>
+                @Html.ActionLink("Chi tiết", "Details", new { id = item.MaHD }, new { @class = "btn btn-primary" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<script>
+    $(document).ready(function () {
+        $(".status-dropdown").change(function () {
+            var maHD = $(this).data("id");
+            var trangThaiMoi = $(this).val();
+
+            $.ajax({
+                url: '@Url.Action("UpdateStatus", "HoaDon", new { area = "Admin" })',
+                type: "POST",
+                data: { id: maHD, trangThai: trangThaiMoi },
+                success: function (response) {
+                    if (response.success) {
+                        alert("Cập nhật trạng thái thành công!");
+                    } else {
+                        alert("Lỗi cập nhật: " + response.message);
+                    }
+                },
+                error: function () {
+                    alert("Có lỗi xảy ra, vui lòng thử lại!");
+                }
+            });
+        });
+    });
+</script>
+

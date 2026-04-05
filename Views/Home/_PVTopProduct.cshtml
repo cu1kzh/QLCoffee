@@ -1,0 +1,51 @@
+﻿@model QLCoffee.Models.ViewModel.ProductVM
+@using PagedList.Mvc;
+
+
+<html> 
+<head>
+    <link href="~/Content/mycss/GiaiStyle.css" rel="stylesheet" />
+    <!-- Bootstrap JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    @*Hiển thị danh sách sản phẩm*@
+    @if (Model.TopProduct != null && Model.TopProduct.Any())
+    {
+        <section class="container-fluid listProduct">
+            <h2 class="section-title">Sản phẩm mới</h2>
+            <ul class="list-container">
+                @foreach (var sanpham in Model.TopProduct)
+                {
+                    <li class="lproduct-item">
+                        <div>
+                            <a href="@Url.Action("ProductDetail", "Home", new { id = sanpham.MaSP })">
+                                <img style="height:150px; width:150px" src="@Url.Content(sanpham.PRODUCT.Img1)" />
+                            </a>
+                        </div>
+                        <div>
+                            <p class="proPrice">@string.Format("{0:N0} VNĐ", sanpham.GiaSP)</p>
+                            <p class="proName">@sanpham.TenSP</p>
+                            <p class="proSale">Đã bán:&nbsp;@Html.DisplayFor(modelItem => sanpham.CHITIET_HOADON.Count)</p>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </section>
+        <!----Hiển thị phân trang-->
+        <div class="pagination-container" style="margin-bottom:20px;">
+            @Html.PagedListPager(Model.TopProduct, page => Url.Action("ProductDetail", new
+            {
+                page,
+           searchTerm = Model.SearchTerm
+           }))
+
+        </div>
+
+    }
+    else
+    {
+        <p>Không tin được sản phẩm nào phù hợp.</p>
+    }
+</body>
+</html>

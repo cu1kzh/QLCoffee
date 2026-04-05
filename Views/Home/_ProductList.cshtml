@@ -1,0 +1,161 @@
+﻿
+@model QLCoffee.Models.ViewModel.ProListVM
+@{
+    ViewBag.Title = "_ProductList";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="~/Content/mycss/GiaiStyle.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Custom CSS */
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .search-container {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+            .search-container input {
+                flex: 1;
+            }
+
+        #div-left {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            #div-left label {
+                font-weight: bold;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+
+        #div-content {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2.section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .list-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .lproduct-item {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(25% - 18px); /* 1 hàng chứa 3 sản phẩm */
+            margin: 5px; /* Tạo khoảng cách giữa các item */
+            padding: 5px; /* Khoảng cách bên trong item */
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .lproduct-item img {
+                max-width: 100%;
+                height: auto;
+                border-bottom: 1px solid #dee2e6;
+                margin-bottom: 15px;
+            }
+
+            .lproduct-item:hover {
+                transform: translateY(-5px);
+            }
+
+        .proPrice {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .proName {
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .proSale {
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="section-title">Tìm kiếm và lọc sản phẩm</h2>
+        @using (Html.BeginForm("_ProductList", "Home", FormMethod.Get)
+)
+        {
+            <div class="search-container">
+                @Html.TextBoxFor(m => m.SearchTerm, new
+                       {
+                           @class = "form-control",
+                           placeholder = "Nhập tên, mô tả hoặc chủng loại sản phẩm"
+                       })
+                <button type="submit" class="btn btn-primary" style="">Tìm kiếm</button>
+            </div>
+            <div id="div-left">
+                <div class="form-group">
+                    <label for="productName">Lọc theo tên sản phẩm:</label>
+                    @Html.DropDownListFor(m => m.SelectedProName, Model.ProductNames, "Chọn sản phẩm", new { @class = "form-control" })
+                </div>
+                <div class="form-group">
+                    <label for="color">Lọc theo màu sắc:</label>
+                    @Html.DropDownListFor(m => m.SelectedColor, Model.Colors, "Chọn màu sắc", new { @class = "form-control" })
+                </div>
+                <button type="submit" class="btn btn-primary">Lọc kết quả</button>
+            </div>}
+
+        <div id="div-content">
+            @Html.Partial("_PVProList", Model)
+        </div>
+    </div>
+</body>
+</html>
+

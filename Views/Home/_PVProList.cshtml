@@ -1,0 +1,41 @@
+﻿@model QLCoffee.Models.ViewModel.ProListVM
+@using PagedList.Mvc;
+
+
+<body>
+    @*Hiển thị danh sách sản phẩm*@
+    @if (Model.ProductList != null && Model.ProductList.Any())
+    {
+        <section class="container-fluid listProduct">
+            <h2 class="section-title">Sản phẩm mới</h2>
+            <ul class="list-container">
+                @foreach (var sanpham in Model.ProductList)
+                {
+                    <li class="lproduct-item">
+                        <div>
+                            <a href="@Url.Action("ProductDetail", "Home", new { id = sanpham.MaSP })">
+                                <img style="height:150px; width:150px" src="@Url.Content(sanpham.PRODUCT.Img1)" />
+                            </a>
+                        </div>
+                        <div>
+
+                            <p class="proPrice">@string.Format("{0:N0} VNĐ", sanpham.GiaSP)</p> @*Custom Prorduct Price*@
+                            <p class="proName">@sanpham.TenSP</p>
+                            <p class="proSale">Đã bán:&nbsp;@Html.DisplayFor(modelItem => sanpham.CHITIET_HOADON.Count)</p>
+                        </div>
+                    </li>
+                }
+            </ul>
+            <div class="pagination-container" style="margin-bottom:auto;">
+                @Html.PagedListPager(Model.ProductList, page => Url.Action("_ProductList",
+                new { page, searchTeam = Model.SearchTerm}))
+            </div>
+        </section>
+        <!----Hiển thị phân trang-->
+
+    }
+    else
+    {
+        <p>Không tin được sản phẩm nào phù hợp.</p>
+    }
+</body>

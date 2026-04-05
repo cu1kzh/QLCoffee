@@ -1,0 +1,141 @@
+﻿@{
+    ViewBag.Title = "Giới Thiệu";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu | Phone Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .about-content {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+            .about-section i {
+                color: #007bff;
+                margin-right: 10px;
+            }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+
+            .team-member img {
+                width: 150px; /* Tăng kích thước ảnh */
+                height: 150px;
+                border-radius: 10px; /* Giữ hình vuông thay vì hình tròn */
+                object-fit: cover; /* Đảm bảo ảnh không bị méo */
+                margin-bottom: 10px;
+            }
+
+            .team-member h4 {
+                margin: 5px 0;
+                color: #007bff;
+            }
+
+            .team-member p {
+                font-size: 14px;
+                color: #555;
+            }
+
+        .cta {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+            .cta a {
+                display: inline-block;
+                padding: 10px 20px;
+                background: #007bff;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+
+                .cta a:hover {
+                    background: #0056b3;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Giới Thiệu Về Chúng Tôi</h2>
+
+        <div class="about-content">
+            <p>Chào mừng bạn đến với <b>Phone Store</b> - cửa hàng chuyên cung cấp các sản phẩm điện thoại chính hãng với giá cả tốt nhất trên thị trường. Chúng tôi cam kết mang đến cho khách hàng trải nghiệm mua sắm tuyệt vời cùng dịch vụ hậu mãi chuyên nghiệp.</p>
+        </div>
+
+        <div class="about-section">
+            <h3><i class="fas fa-bullseye"></i> Sứ Mệnh Của Chúng Tôi</h3>
+            <p>Phone Store mong muốn trở thành địa chỉ tin cậy cho mọi khách hàng khi tìm kiếm các sản phẩm công nghệ, mang lại sự hài lòng cao nhất với chất lượng dịch vụ hàng đầu.</p>
+        </div>
+
+        <div class="about-section">
+            <h3><i class="fas fa-gem"></i> Giá Trị Cốt Lõi</h3>
+            <ul>
+                <li><b>Chất lượng:</b> Cung cấp sản phẩm chính hãng, có bảo hành.</li>
+                <li><b>Dịch vụ tận tâm:</b> Hỗ trợ khách hàng 24/7.</li>
+                <li><b>Giá cả cạnh tranh:</b> Mang đến giá tốt nhất trên thị trường.</li>
+            </ul>
+        </div>
+
+        <h3><i class="fas fa-users"></i> Đội Ngũ Của Chúng Tôi</h3>
+        <div class="team">
+            <div class="team-member">
+                <img src="@Url.Content("~/Content/Image/tronghieudeptraivailon.jpg")" alt="CEO">
+                <h4>Nguyễn Trọng Hiếu</h4>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="@Url.Content("~/Content/Image/hgiai.jpg")" alt="Marketing">      
+                <h4>Đàm Hòa Giai</h4>
+                <p>Marketing Manager</p>
+            </div>
+            
+        </div>
+
+        <div class="cta">
+            <a href="@Url.Action("Index", "Contact")">Liên Hệ Ngay</a>
+        </div>
+    </div>
+</body>
+</html>

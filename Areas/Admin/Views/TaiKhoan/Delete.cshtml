@@ -1,0 +1,61 @@
+﻿@model QLCoffee.Models.TAIKHOAN
+
+@{
+    ViewBag.Title = "Xóa tài khoản";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Xóa tài khoản</h2>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<h3>Bạn có chắc chắn muốn xóa tài khoản này không?</h3>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Tên đăng nhập:</dt>
+        <dd>@Html.DisplayFor(model => model.TenDN)</dd>
+
+        <dt>Email:</dt>
+        <dd>@Html.DisplayFor(model => model.Email)</dd>
+
+        <dt>Phân quyền:</dt>
+        <dd>@Html.DisplayFor(model => model.PhanQuyen)</dd>
+
+        <dt>Khách hàng:</dt>
+        <dd>@(Model.KHACHHANG != null ? Model.KHACHHANG.HoTenKH : "Không có")</dd>
+
+        <dt>Nhân viên:</dt>
+        <dd>@(Model.NHANVIEN != null ? Model.NHANVIEN.TenNV : "Không có")</dd>
+    </dl>
+
+    @using (Html.BeginForm("DeleteConfirmed", "TaiKhoan", new { id = Model.TenDN }, FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-danger" id="deleteButton" />
+            <a href="@Url.Action("Index")" class="btn btn-primary">Quay lại danh sách</a>
+        </div>
+    }
+</div>
+
+<script>
+    document.getElementById("deleteButton").addEventListener("click", function (event) {
+        if (!confirm("Bạn có chắc chắn muốn xóa tài khoản này không?")) {
+            event.preventDefault(); // Ngăn không cho form submit nếu người dùng từ chối
+        }
+    });
+</script>

@@ -1,0 +1,33 @@
+﻿@model IEnumerable<QLCoffee.Models.CHITIET_HOADON>
+
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+
+}
+
+<h2>CHI TIẾT HÓA ĐƠN</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mã Sản Phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Số Lượng</th>
+            <th>Đơn Giá</th>
+            <th>Thành Tiền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.MaSP</td>
+            <td>@item.SANPHAM.TenSP</td>
+            <td>@item.Soluong</td>
+            <td>@string.Format("{0:N0} VNĐ", item.TongTien)</td>
+
+        </tr>}
+    </tbody>
+</table>

@@ -1,0 +1,52 @@
+﻿@model QLCoffee.Models.LOAISANPHAM
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h2>XÓA LOẠI SẢN PHẨM</h2>
+
+<h3>Bạn có chắc chắn muốn xóa loại sản phẩm này không?</h3>
+
+<div id="delete-message"></div>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Mã loại sản phẩm:</dt>
+        <dd>@Html.DisplayFor(model => model.MaLoaiSP)</dd>
+
+        <dt>Tên loại sản phẩm:</dt>
+        <dd>@Html.DisplayFor(model => model.TenLoaiSP)</dd>
+    </dl>
+
+    <button id="btnDelete" class="btn btn-danger">Xóa</button>
+    @Html.ActionLink("Quay về danh sách", "Index", null, new { @class = "btn btn-primary" })
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#btnDelete").click(function () {
+            if (!confirm("Bạn có chắc muốn xóa loại sản phẩm này?")) return;
+
+            $.ajax({
+                url: '@Url.Action("DeleteConfirmed", "LoaiSanPham", new { area = "Admin" })',
+                type: 'POST',
+                data: {
+                    id: '@Model.MaLoaiSP',
+                    __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                },
+                success: function (response) {
+                    if (response.success) {
+                        $("#delete-message").html('<div class="alert alert-success">' + response.message + '</div>');
+                    } else {
+                        $("#delete-message").html('<div class="alert alert-danger">' + response.message + '</div>');
+                    }
+                },
+                error: function () {
+                    $("#delete-message").html('<div class="alert alert-danger">Lỗi trong quá trình xử lý.</div>');
+                }
+            });
+        });
+    });
+</script>

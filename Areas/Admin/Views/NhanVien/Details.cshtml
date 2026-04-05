@@ -1,0 +1,71 @@
+﻿@model QLCoffee.Models.NHANVIEN
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã nhân viên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaNV)
+        </dd>
+
+        <dt>
+            Tên nhân viên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenNV)
+        </dd>
+
+        <dt>
+            Số điện thoại
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoDT)
+        </dd>
+
+        <dt>
+            Giới tính
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GioiTinh)
+        </dd>
+
+        <dt>
+            Địa chỉ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+
+        <dt>
+            Ngày sinh
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NgaySinh)
+        </dd>
+
+        <dt>
+            chức vụ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChucVu)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaNV }, new { @class = "btn btn-primary" })  |
+    @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-primary" })
+</p>

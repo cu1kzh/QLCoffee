@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+
+        #div-left {
+        }
+
+        #div-content {
+            width: 100%;
+            height: auto;
+            float: left;
+            background-color: white;
+        }
+
+        .text-left {
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            text-decoration: none
+        }
+        .nav-link{
+            color:white;
+            
+        }
+        .nav-link:hover {
+                background-color: #333333;
+                color: white;
+                border-radius:5px;               
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="div-top" style="background-color: black">
+        <nav class="navbar navbar-expand-sm" id="div-menu">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="id-logo" href="#" style="font-size: 30px; font-weight: bold; color: white">Admin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/TaiKhoan/Index" style="font-weight:normal;">Quản lý tài khoản</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/SanPham/Index" style="font-weight:normal;">Quản Lý Sản Phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/LoaiSanPham/Index" style="font-weight:normal;">Loại Sản Phẩm</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Staff/Index" style="font-weight: normal;">Quản lý nhân viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/KhachHang/Index" style="font-weight:normal;">Quản lý khách hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/NCC/Index" style="font-weight:normal;">Nhà cung cấp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/HoaDon/Index" style="font-weight:normal;">Thông tin hóa đơn</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <hr />
+    <div id="div-left">
+        @*<div class="container mt-3">
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                    Website
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Home/TrangChu">Trang Chủ</a></li>
+                </ul>
+            </div>
+        </div>*@
+    </div>
+    <div id="div-content" style="padding:10px">
+        @RenderBody()
+    </div>
+</body>
+</html>

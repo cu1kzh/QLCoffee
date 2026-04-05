@@ -1,0 +1,67 @@
+﻿@model IEnumerable<QLCoffee.Models.NHANVIEN>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })
+</p>
+    <table class="table">
+        <tr>
+            <th>
+                Mã nhân viên
+            </th>
+            <th>
+                Tên nhân viên
+            </th>
+            <th>
+                Số điện thoại
+            </th>
+            <th>
+                Giới tính
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Ngày sinh
+            </th>
+            <th>
+                Chức vụ
+            </th>           
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaNV)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TenNV)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoDT)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GioiTinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaChi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NgaySinh)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ChucVu)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MaNV }, new { @class = "btn btn-primary" }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.MaNV }, new { @class = "btn btn-dark" }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.MaNV }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+
+    </table>

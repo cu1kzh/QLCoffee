@@ -1,0 +1,328 @@
+﻿@model QLCoffee.Models.ViewModel.HomeProductVM
+@{
+    ViewBag.Title = "TrangChu";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+}
+
+<head>
+
+    <style>
+        .box-drinks, .fm-drink {
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        .box-dess {
+            height: 150px;
+            width: 150px;
+            border-radius: 10px;
+            background-color: saddlebrown;
+        }
+
+        .home-image {
+            width: 450px;
+            height: 600px;
+        }
+
+        .home-des {
+            text-align: center;
+        }
+
+        #font-type {
+            color: #bf9369;
+            font-family: 'Fira Sans';
+            font-weight: bold;
+            font-style: normal;
+            font-size: 24pt;
+        }
+
+
+        /* Position the "next button" to the right */
+        /* Đặt chiều rộng và chiều cao của slider */
+        .slider {
+            position: relative;
+            width: 100%;
+            height: auto; /* Chiều cao toàn màn hình */
+            overflow: hidden;
+            margin: 0; /* Loại bỏ viền hoặc khoảng trống */
+            padding: 0;
+        }
+
+        /* Định dạng ảnh trong slider */
+        .slides img {
+            width: 100%; /* Độ rộng 100% */
+            height: 500px; /* Chiều cao toàn màn hình */
+            object-fit: cover; /* Giữ tỷ lệ ảnh, cắt phần thừa */
+        }
+
+        /* Nút chuyển slide */
+        .prev, .next {
+            position: absolute;
+            top: 50%; /* Đặt nút giữa theo chiều dọc */
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        /* Đặt vị trí nút */
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        /* Hiển thị slide đầu tiên */
+        .slides {
+            display: none;
+        }
+
+            .slides:first-child {
+                display: block;
+            }
+
+        .listProduct {
+            background-color: #f9f9f9; /* Light background for the container */
+            padding: 20px;
+            border-radius: 8px;
+            color: #333;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .list-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-item {
+            background-color: #ffffff; /* White background for each product */
+            width: calc(25% - 10px);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+
+            .product-item:hover {
+                transform: scale(1.05);
+                background-color: #f1f1f1; /* Light gray hover background */
+            }
+
+        .product-img img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            margin-top: 10px;
+        }
+
+        .product-name {
+            font-size: 1rem;
+            font-weight: bold;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .product-price {
+            color: #f39c12;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .product-sale {
+            color: #8e8e8e;
+            font-size: 0.9rem;
+        }
+
+        .img_menu {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text-menu {
+            font-size: 16px;
+            font-weight: bold;
+            color: #354F52;
+            margin-bottom: 50px;
+        }
+
+        .list-items {
+            flex: 0 0 auto; /* Đảm bảo các item không co giãn */
+            text-align: center; /* Căn giữa nội dung */
+            border-radius: 5px;
+        }
+
+
+            .list-items:hover {
+                transform: scale(1.1); /* Phóng to mục */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Thêm bóng */
+            }
+
+                .list-items:hover img {
+                    transform: scale(1.2); /* Phóng to hình ảnh trong mục */
+                }
+    </style>
+</head>
+
+
+
+<div class="slider">
+    <button class="prev" onclick="plusSlides(-1)">❮</button>
+    <button class="next" onclick="plusSlides(1)">❯</button>
+    <div class="slides">
+        <img src="~/Content/Image/baner_ip.jpg" alt="Slide 1" />
+    </div>
+    <div class="slides">
+        <img src="~/Content/Image/baner_dongho.jpg" alt="Slide 2" />
+    </div>
+    <div class="slides">
+        <img src="~/Content/Image/baner_taynghe.jpg" alt="Slide 3" />
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        const slides = document.querySelectorAll('.slides');
+        if (n >= slides.length) slideIndex = 0;
+        if (n < 0) slideIndex = slides.length - 1;
+        slides.forEach(slide => slide.style.display = 'none');
+        slides[slideIndex].style.display = 'block';
+
+    }</script>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-lg-7" style="color: #354F52; width: 700px; display:block ;margin-top: 170px;margin-left:100px ; ">
+
+
+            <h1> <span style="color: #bf9369; font-size: 36pt; letter-spacing: inherit;">Về HGPhone</span></h1>
+            <p></p>
+            <h2 style="letter-spacing: inherit;font-size:20px">
+                HGPhone – CHUỖI CỬA HÀNG CÔNG NGHỆ CAO CẤP
+            </h2>
+            <p>
+                HGPhone là kết quả của sự hợp tác chặt chẽ giữa Apple và HGPhone. Chúng tôi tự hào mang đến cho cộng đồng yêu thích sản phẩm Apple một không gian trải nghiệm mua sắm đẳng cấp, với cửa hàng ủy quyền chính thức được nâng cấp và cập nhật mới nhất từ Apple tại Việt Nam. Tại HGPhone, bạn sẽ tìm thấy những sản phẩm và dịch vụ chất lượng hàng đầu, cùng sự chăm sóc tận tâm dành cho các iFan.
+            </p>
+        </div>
+        <div class=" col-lg-5" style="text-align: center" ;>
+
+            <img src="~/Content/Image/applestore.jpg" style="width: 500px; margin-top: 50px; border-radius: 20px;" />
+        </div>
+    </div>
+</div>
+<hr />
+<!--Phần sản phẩm nổi bật-->
+@Html.Partial("_PVFeatuedProduct", Model)
+<!--Phần sản phẩm mới-->
+@Html.Partial("_PVNewProduct", Model)
+<br />
+<br />
+<div style=" text-align: center; font-size: 48px; color: #6e6e73;">Các thiết bị và phụ kiện mà chung tôi cung cấp</div>
+<div style="margin-top:30px;margin-bottom:30px">
+    <div class="d-flex justify-content-center flex-wrap">
+        <div class="list-items text-center mx-3">
+            <a href="https://www.apple.com/vn-edu/store">
+                <img class="img_menu" src="~/Content/Image/iphone.png" alt="Iphone" />
+            </a>
+            <div class="text-menu">Iphone</div>
+        </div>
+        <div class="list-items text-center mx-3">
+            <img class="img_menu" src="~/Content/Image/mac.png" alt="Mac" />
+            <div class="text-menu">Mac</div>
+        </div>
+        <div class="list-items text-center mx-3">
+            <img class="img_menu" src="~/Content/Image/Tainghe.png" alt="Tai nghe" />
+            <div class="text-menu">Tai nghe</div>
+        </div>
+        <div class="list-items text-center mx-3">
+            <img class="img_menu" src="~/Content/Image/phukien.png" alt="Phụ kiện" />
+            <div class="text-menu">Phụ kiện</div>
+        </div>
+        <div class="list-items text-center mx-3">
+            <img class="img_menu" src="~/Content/Image/ipad.png" alt="Ipad" />
+            <div class="text-menu">Ipad</div>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="container-fluid">
+    <div class="row">
+        <div class=" col-lg-5">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/Content/Image/cuahangtopzone.jpg" class="d-block" style="width: 100%; height: 500px; margin-top: 30px; border-radius: 10px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Content/Image/cuahangtopzone2.jpg" class="d-block" style="width: 100%; height: 500px; margin-top: 30px; border-radius: 10px">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Content/Image/cuahangtopzone3.jpg" class="d-block" style="width: 100%; height: 500px; margin-top: 30px; border-radius: 10px">
+                    </div>
+                </div>
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+
+        </div>
+        <div class=" col-lg-6" style="color: #354F52; width: 650px; display:block ;margin-top: 200px;margin-left:100px" ;>
+            <h1> <span style="color: #bf9369; font-size: 36pt; letter-spacing: inherit;">Về Cửa Hàng</span></h1>
+            <p></p>
+            <p>
+                Tại HGPhone , khách hàng yêu mến hệ sinh thái Apple sẽ tìm thấy đầy đủ và đa dạng nhất các sản phẩm như iPhone, iPad, Apple Watch, MacBook và các phụ kiện Apple... với không gian mua sắm đẳng cấp, hiện đại.
+            </p>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+

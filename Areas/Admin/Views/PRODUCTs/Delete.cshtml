@@ -1,0 +1,64 @@
+﻿@model QLCoffee.Models.PRODUCT
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<h2>QUẢN LÝ CHI TIẾT SẢN PHẨM</h2>
+
+<h3>Bạn có chắc muốn xóa chi tiết sản phẩm này?</h3>
+
+<div id="delete-message"></div>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Tên sản phẩm:</dt>
+        <dd>@Html.DisplayFor(model => model.NamePro)</dd>
+
+        <dt>Mô tả:</dt>
+        <dd>@Html.DisplayFor(model => model.Desciption)</dd>
+
+        <dt>Hình 1:</dt>
+        <dd><img style="height:150px; width:150px" src="@Url.Content(Model.Img1)" /></dd>
+
+        <dt>Hình 2:</dt>
+        <dd><img style="height:150px; width:150px" src="@Url.Content(Model.Img2)" /></dd>
+
+        <dt>Hình 3:</dt>
+        <dd><img style="height:150px; width:150px" src="@Url.Content(Model.Img3)" /></dd>
+
+        <dt>Loại sản phẩm:</dt>
+        <dd>@Html.DisplayFor(model => model.LOAISANPHAM.TenLoaiSP)</dd>
+    </dl>
+
+    <button id="btnDelete" class="btn btn-danger">Xóa</button>
+    @Html.ActionLink("Quay về danh sách", "Index", null, new { @class = "btn btn-dark" })
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#btnDelete").click(function () {
+            if (!confirm("Bạn có chắc muốn xóa sản phẩm này?")) return;
+
+            $.ajax({
+                url: '@Url.Action("DeleteConfirmed", "PRODUCTs", new { area = "Admin" })',
+                type: 'POST',
+                data: {
+                    id: '@Model.IDPro',
+                    __RequestVerificationToken: $('input[name="__RequestVerificationToken"]').val()
+                },
+                success: function (response) {
+                    if (response.success) {
+                        $("#delete-message").html('<div class="alert alert-success">' + response.message + '</div>');
+                    } else {
+                        $("#delete-message").html('<div class="alert alert-danger">' + response.message + '</div>');
+                    }
+                },
+                error: function () {
+                    $("#delete-message").html('<div class="alert alert-danger">Lỗi trong quá trình xử lý.</div>');
+                }
+            });
+        });
+    });
+</script>

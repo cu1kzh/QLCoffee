@@ -1,0 +1,327 @@
+﻿@model QLCoffee.Models.ViewModel.ProductVM
+
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+}
+<head>
+
+    <link href="~/Content/mycss/GiaiStyle.css" rel="stylesheet" />
+    <style>
+        #div-left {
+            width: 20%;
+            height: auto;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            display: flex;
+            max-width: 100%;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-top:10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+
+        }
+
+        .product-left {
+            flex: 1;            
+            margin-left: 250px;
+        }
+        .product-right {
+            flex: 2;
+            text-align: left;
+            margin-left: 50px;
+        }
+
+        .product-main-image {
+            border-radius: 8px;
+            margin-bottom: 10px;            
+        }
+
+        .thumbnail-gallery {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .thumbnail {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+            .thumbnail:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+            }
+
+        .product-main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .thumbnail-gallery img {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .share-section {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+
+       
+        .product-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-rating {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #999;
+        }
+
+            .product-rating .stars {
+                color: #ff9900;
+                margin-right: 5px;
+            }
+
+        .product-price {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .current-price {
+            color: #ff4c00;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .product-promotions h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .promo-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+            .promo-buttons button {
+                padding: 8px 12px;
+                background-color: #f7c137;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 14px;
+            }
+
+
+        .product-options h4 {
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .colors, .sizes {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .color-option {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .sizes button {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .add-to-cart {
+            padding: 15px;
+            background-color: #ff4c00;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            .add-to-cart:hover {
+                background-color: #e03e00;
+            }
+        h2.section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .list-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .lproduct-item {
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(25% - 18px); /* 1 hàng chứa 3 sản phẩm */
+            margin: 5px; /* Tạo khoảng cách giữa các item */
+            padding: 5px; /* Khoảng cách bên trong item */
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .lproduct-item img {
+                max-width: 100%;
+                height: auto;
+                border-bottom: 1px solid #dee2e6;
+                margin-bottom: 10px;
+            }
+
+            .lproduct-item:hover {
+                transform: translateY(-5px);
+            }
+
+        .proPrice {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .proName {
+            font-size: 16px;
+            color: #333333;
+        }
+
+        .proSale {
+            color: #6c757d;
+        }
+    </style>
+
+    <script>
+        // Select all thumbnail images
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('mainImage');
+
+        // Add hover event listeners
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('mouseover', () => {
+                const newImageSrc = thumbnail.getAttribute('data-image');
+                mainImage.setAttribute('src', newImageSrc);
+            });
+        });</script>
+</head>
+
+<body>
+
+    <div class="product-container">      
+        <div class="product-left">
+            @if (!string.IsNullOrEmpty(Model.sanpham.PRODUCT.Img1))
+            {
+                <img id="mainImage" class="product-main-image" src="@Url.Content(Model.sanpham.PRODUCT.Img1)" alt="Main Product Image">
+            }
+            else
+            {
+                <img id="mainImage" class="product-main-image" src="~/Content/Images/no-image.png" alt="Không có ảnh">
+            }
+
+            <div class="thumbnail-gallery">
+                @if (!string.IsNullOrEmpty(Model.sanpham.PRODUCT.Img2))
+                {
+                    <img class="thumbnail" src="@Url.Content(Model.sanpham.PRODUCT.Img2)" alt="Thumbnail 1" data-image="@Url.Content(Model.sanpham.PRODUCT.Img2)">
+                }
+
+                @if (!string.IsNullOrEmpty(Model.sanpham.PRODUCT.Img3))
+                {
+                    <img class="thumbnail" src="@Url.Content(Model.sanpham.PRODUCT.Img3)" alt="Thumbnail 2" data-image="@Url.Content(Model.sanpham.PRODUCT.Img3)">
+                }
+            </div>
+        </div>
+        <div class="product-right">
+            <!-- Product Details -->
+            <h1 class="product-title">@Html.DisplayFor(model => model.sanpham.TenSP)</h1>
+            <p class="product-rating">
+                <span class="stars">★★★★☆</span>
+                <span>4.7</span>
+                <span>136 Đánh Giá</span>
+                <span>@Model.sanpham.CHITIET_HOADON.Count Đã Bán </span>
+            </p>
+            <p class="product-price">
+                <span class="current-price">@string.Format("{0:N0} VNĐ", Model.sanpham.GiaSP)</span>
+
+            </p>
+            <div class="product-promotions">
+                <h4><strong>Khuyến mãi</strong></h4>
+                <div class="promo-buttons">
+
+                    <button>Giảm 20%</button>
+                </div>
+            </div>
+
+            <div class="product-options">
+                <h4><strong>Màu Sắc</strong></h4>
+                <div class="colors">
+                    <button class="color-option" style="background-color: black;"></button>
+                    <button class="color-option" style="background-color: white;"></button>
+                </div>
+                <h4>Dung lượng</h4>
+                <div class="sizes">
+                    <button>1T</button>
+                    <button>128GB</button>
+                </div>
+            </div>           
+                <a class="add-to-cart btn btn-primary col-6" href="@Url.Action("AddToCart", "Cart", new { id = Model.sanpham.MaSP, quantity = 1 })">
+                    Thêm vào giỏ hàng
+                </a>           
+            </div>
+    </div>
+    <hr />
+    @*Hiển thị sp nổi bật*@
+    @Html.Partial("_PVTopProduct", Model)
+    @*Hien thi DS SP*@
+    <hr />
+    @Html.Partial("_PVRelatedProduct", Model)
+    <hr />
+</body>

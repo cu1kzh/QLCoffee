@@ -1,0 +1,40 @@
+﻿body {
+    margin: 0;
+}
+#div-content {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+#div-left {
+    width: 20%;
+    height: 100vh; /* Đảm bảo chiều cao chiếm 100% viewport */
+    position: fixed; /* Đảm bảo sidebar không bị cuộn */
+    float: left;
+    overflow-y: auto; /* Nếu sidebar dài hơn, cho phép cuộn */
+    padding-top: 20px;
+}
+
+.nav-link {
+    padding: 10px 15px;
+    display: block;
+}
+
+    .nav-link:hover {
+        background-color: #495057;
+        border-radius: 5px;
+    }
+
+.logo {
+    display: flex;
+    flex-direction: column; /* Xếp theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    justify-content: center; /* Căn giữa theo chiều dọc (nếu cần) */
+}
+
+#bot-size{
+    margin-top: 20px;
+
+}

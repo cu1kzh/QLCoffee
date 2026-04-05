@@ -1,0 +1,81 @@
+﻿@model IEnumerable<QLCoffee.Models.TAIKHOAN>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+    int i = 1;
+}
+
+<h2>Danh sách tài khoản</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })
+    
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            STT
+        </th>
+        <th>
+            Tên đăng nhập
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Mật khẩu
+        </th>
+        <th>
+            Phân quyền
+        </th>
+        <th>
+            Mã khách hàng
+        </th>
+        <th>
+            Mã nhân viên
+        </th>
+       
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @i
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenDN)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatKhau)
+            </td>
+            <td>
+                @if (item.PhanQuyen == "A")
+                {
+                    @: Admin
+                }
+                else
+                {
+                    @: Customer
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaKH)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNV)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.TenDN }, new { @class = "btn btn-sm btn-primary" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.TenDN, }, new { @class = "btn btn-sm btn-dark" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.TenDN }, new { @class = "btn btn-sm btn-danger" })
+            </td>
+        </tr>
+        i++;
+    }
+</table>

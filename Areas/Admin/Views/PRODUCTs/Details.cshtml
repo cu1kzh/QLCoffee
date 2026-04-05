@@ -1,0 +1,74 @@
+﻿@model QLCoffee.Models.PRODUCT
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>QUẢN LÝ SẢN PHẨM</h2>
+
+<div>
+    <h4>Chi tiết sản phẩm</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã sản phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDPro)
+        </dd>
+        <dt>
+            Tên sản phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NamePro)
+        </dd>
+
+        <dt>
+            Mô tả:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Desciption)
+        </dd>
+
+        <dt>
+            Hình 1:
+        </dt>
+
+        <dd>
+            <img style="height:150px; width:150px" src="@Url.Content(Model.Img1)" />
+        </dd>
+
+        <dt>
+            Hình 2:
+        </dt>
+
+        <dd>
+            <img style="height:150px; width:150px" src="@Url.Content(Model.Img2)" />
+        </dd>
+
+        <dt>
+            Hình 3:
+        </dt>
+
+        <dd>
+            <img style="height:150px; width:150px" src="@Url.Content(Model.Img3)" />
+        </dd>
+
+        <dt>
+            Tên loại sản phẩm:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOAISANPHAM.TenLoaiSP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDPro }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

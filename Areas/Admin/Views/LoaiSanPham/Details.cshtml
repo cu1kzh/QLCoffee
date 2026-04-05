@@ -1,0 +1,35 @@
+﻿@model QLCoffee.Models.LOAISANPHAM
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chi tiết mã loại sản phẩm</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã loại sản phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaLoaiSP)
+        </dd>
+
+        <dt>
+            Tên loại sản phẩm
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenLoaiSP)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MaLoaiSP }, new { @class = "btn btn-priamry" })|
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-priamry" })
+</p>
+

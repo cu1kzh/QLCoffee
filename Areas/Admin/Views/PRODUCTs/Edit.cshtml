@@ -1,0 +1,79 @@
+﻿@model QLCoffee.Models.PRODUCT
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>QUẢN LÝ CHI TIẾT SẢN PHẨM</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Sửa thông tin sản phẩm</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.IDPro)
+
+        <div class="form-group">
+            <label>Tên sản phẩm:</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NamePro, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NamePro, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Mô tả:</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Desciption, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Desciption, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Hình 1:</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Img1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Img1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Hình 2:</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Img2, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Img2, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Hình 3:</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Img3, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Img3, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Tên loại sản phẩm</label>
+            <div class="col-md-10">
+                @Html.DropDownList("MaLoaiSP", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaLoaiSP, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Lưu" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>@Html.ActionLink("Quay về danh sách", "Index", null, new { @class = "btn btn-dark" })</div>
+
+
+

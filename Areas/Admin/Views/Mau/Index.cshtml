@@ -1,0 +1,47 @@
+﻿@model IEnumerable<QLCoffee.Models.MAU>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>QUẢN LÝ MÀU</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaMau) 
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenMau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RGB)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.MaMau)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.TenMau)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RGB)
+    </td>
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.MaMau }) |
+        @Html.ActionLink("Details", "Details", new { id = item.MaMau }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.MaMau })
+    </td>
+</tr>
+}
+
+</table>

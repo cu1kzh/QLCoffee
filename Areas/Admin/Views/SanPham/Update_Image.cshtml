@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Update_Image";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div>
+    <h3>Thêm hình ảnh</h3>
+    <form method="post" enctype="multipart/form-data">
+        <input type="hidden" name="idSanPham" value="@ViewBag.idSanPham" />
+        <p>
+            <label>Chọn ảnh</label>
+            <input type="file" name="fileImage" />
+        </p>
+        <button class="btn btn-sm btn-success">Upload</button>
+    </form>
+
+</div>
+
